@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pre-Med Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cerulean: #2a7f9e;
+      --light-blue: #e6f4f9;
+      --gray: #2f2f2f;
+      --light-gray: #f5f5f5;
+      --pink: #f7c6d9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--light-gray);
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(120deg, var(--cerulean), #5fa8c4);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Swirl accents */
+    header::before, header::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+    }
+
+    header::before {
+      width: 300px;
+      height: 300px;
+      background: var(--pink);
+      top: -100px;
+      left: -100px;
+    }
+
+    header::after {
+      width: 400px;
+      height: 400px;
+      background: white;
+      bottom: -150px;
+      right: -150px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-weight: 300;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--cerulean);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--pink);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--cerulean);
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-left: 5px solid var(--pink);
+    }
+
+    .cta {
+      background: var(--light-blue);
+      border-left: 5px solid var(--cerulean);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      background: var(--cerulean);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+
+    .contact a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Pre-Med Student | Machine Learning | Finance | Innovation</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#academics">Academics</a>
+    <a href="#experience">Experiences</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a pre-medical student passionate about bridging healthcare with technology and data-driven decision-making. My work sits at the intersection of machine learning, finance, and career development, with a focus on creating impactful, scalable solutions.
+      </p>
+    </div>
+
+    <div class="card cta">
+      <h3>What Drives Me</h3>
+      <ul>
+        <li>Applying machine learning to improve healthcare outcomes</li>
+        <li>Exploring finance and strategy in medical innovation</li>
+        <li>Building tools that empower people and careers</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="academics">
+    <h2>Academics</h2>
+    <div class="card">
+      <p><strong>University Name</strong> — B.S. in Biology / Pre-Med Track</p>
+      <p>Relevant Coursework: Biochemistry, Data Science, Machine Learning, Health Economics</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experiences</h2>
+    <div class="card">
+      <p><strong>Research Assistant</strong></p>
+      <p>Worked on applying machine learning models to clinical datasets.</p>
+    </div>
+
+    <div class="card">
+      <p><strong>Intern – Healthcare/Finance</strong></p>
+      <p>Analyzed financial models related to healthcare innovation and startups.</p>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <h2>Expertise</h2>
+    <div class="card">
+      <ul>
+        <li>Python, R, SQL</li>
+        <li>Machine Learning & Data Analysis</li>
+        <li>Financial Modeling</li>
+        <li>Career Strategy & Leadership</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="card">
+      <p><strong>Project 1:</strong> ML Model for Disease Prediction</p>
+      <p><strong>Project 2:</strong> Healthcare Financial Analysis Tool</p>
+      <p><strong>Project 3:</strong> Career Planning Web App</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card contact">
+      <p>📞 Phone: (123) 456-7890</p>
+      <p>📧 Email: your.email@example.com</p>
+      <p>💻 GitHub: <a href="#">github.com/yourusername</a></p>
+      <p>🔗 LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Aniah Mathurin | Designed with intention</p>
+  </footer>
+
+</body>
+</html>
